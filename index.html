@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>50 причин, почему я тебя люблю</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="img/іі.jpg" alt="background-image">
+    <h1>50 причин, почему я тебя люблю</h1>
+    <h2>Каждая причина — это частичка моего сердца.</h2>
+
+    <!-- Кнопка "Начать путешествие" -->
+    <button id="start-button" class="start-button" onclick="startJourney()">Начать путешествие</button>
+
+    <!-- Контейнер для фона и причины -->
+    <div class="reason-container" id="reason-container" style="display: none;">
+        <!-- Черный прозрачный фон -->
+        <div class="overlay"></div>
+
+        <!-- Причина 1 -->
+        <div class="reason" id="reason-1">
+            <h3>Ты всегда знаешь, как заставить меня улыбнуться, даже в самые трудные моменты.</h3>
+            <div class="heart-container">
+                <span class="heart" id="heart-1">❤️</span>
+                <span class="heart" id="heart-2">❤️</span>
+                <span class="heart" id="heart-3">❤️</span>
+                <span class="heart" id="heart-4">❤️</span>
+                <span class="heart" id="heart-5">❤️</span>
+            </div>
+            <button class="next-reason" onclick="nextReason(2)">Следующая причина</button>
+        </div>
+          <!-- Причина 2 -->
+          <div class="reason" id="reason-2">
+            <h3>Ты всегда рядом, когда мне это нужно.</h3>
+            <div class="heart-container">
+                <span class="heart" id="heart-1">💋</span>
+                <span class="heart" id="heart-2">💋</span>
+                <span class="heart" id="heart-3">💋</span>
+                <span class="heart" id="heart-4">💋</span>
+                <span class="heart" id="heart-5">💋</span>
+            </div>
+            <button class="next-reason" onclick="nextReason(3)">Следующая причина</button>
+        </div>
+<!-- Причина 3 -->
+<div class="reason" id="reason-3">
+    <h3>Ты заставляешь меня чувствовать себя особенным.</h3>
+    <div class="heart-container">
+        <span class="heart" id="heart-1">💍</span>
+        <span class="heart" id="heart-2">💍</span>
+        <span class="heart" id="heart-3">💍</span>
+        <span class="heart" id="heart-4">💍</span>
+        <span class="heart" id="heart-5">💍</span>
+    </div>
+    <button class="next-reason" onclick="nextReason(4)">Следующая причина</button>
+</div>
+<!-- Причина 4 -->
+<div class="reason" id="reason-4">
+    <h3>Ты никогда не судишь меня, а принимаешь таким, какой я есть.</h3>
+    <div class="heart-container">
+        <span class="heart" id="heart-1">🌹</span>
+        <span class="heart" id="heart-2">🌹</span>
+        <span class="heart" id="heart-3">🌹</span>
+        <span class="heart" id="heart-4">🌹</span>
+        <span class="heart" id="heart-5">🌹</span>
+    </div>
+    <button class="next-reason" onclick="nextReason(5)">Следующая причина</button>
+</div>
+<!-- Причина 5 -->
+<div class="reason" id="reason-5">
+    <h3>Ты всегда так стараешься ради меня.</h3>
+    <div class="heart-container">
+        <span class="heart" id="heart-1">💖</span>
+        <span class="heart" id="heart-2">💖</span>
+        <span class="heart" id="heart-3">💖</span>
+        <span class="heart" id="heart-4">💖</span>
+        <span class="heart" id="heart-5">💖</span>
+    </div>
+    <button class="next-reason" onclick="nextReason(6)">Следующая причина</button>
+</div>
+<!-- Причина 6 -->
+<div class="reason" id="reason-6">
+    <h3>Ты остаешься со мной несмотря ни на что</h3>
+    <div class="heart-container">
+        <span class="heart" id="heart-1">💗</span>
+        <span class="heart" id="heart-2">💗</span>
+        <span class="heart" id="heart-3">💗</span>
+        <span class="heart" id="heart-4">💗</span>
+        <span class="heart" id="heart-5">💗</span>
+    </div>
+    <button class="next-reason" onclick="nextReason(7)">Следующая причина</button>
+</div>
+<!-- Причина 7 -->
+<div class="reason" id="reason-7">
+    <h3>Ты всегда помнишь, что я люблю.</h3>
+    <div class="heart-container">
+        <span class="heart" id="heart-1">🌸</span>
+        <span class="heart" id="heart-2">🌸</span>
+        <span class="heart" id="heart-3">🌸</span>
+        <span class="heart" id="heart-4">🌸</span>
+        <span class="heart" id="heart-5">🌸</span>
+    </div>
+    <button class="next-reason" onclick="nextReason(8)">Следующая причина</button>
+</div>
+<!-- Причина 8 -->
+<div class="reason" id="reason-8">
+    <h3>Ты умеешь вдохновлять меня на новые свершения.</h3>
+    <div class="heart-container">
+        <span class="heart" id="heart-1">🌺</span>
+        <span class="heart" id="heart-2">🌺</span>
+        <span class="heart" id="heart-3">🌺</span>
+        <span class="heart" id="heart-4">🌺</span>
+        <span class="heart" id="heart-5">🌺</span>
+    </div>
+    <button class="next-reason" onclick="nextReason(9)">Следующая причина</button>
+</div>
+
+<!-- Причина 9 -->
+<div class="reason" id="reason-9">
+    <h3>Ты даришь мне тепло и уют в любое время года.</h3>
+    <div class="heart-container">
+        <span class="heart" id="heart-1">❤️</span>
+        <span class="heart" id="heart-2">❤️</span>
+        <span class="heart" id="heart-3">❤️</span>
+        <span class="heart" id="heart-4">❤️</span>
+        <span class="heart" id="heart-5">❤️</span>
+    </div>
+    <button class="next-reason" onclick="nextReason(10)">Следующая причина</button>
+</div>
+<!-- Причина 10 -->
+<div class="reason" id="reason-10">
+    <h3>Ты знаешь, как сделать мой день лучше, даже когда я чувствую себя плохо.</h3>
+    <div class="heart-container">
+        <span class="heart" id="heart-1">🌼</span>
+        <span class="heart" id="heart-2">🌼</span>
+        <span class="heart" id="heart-3">🌼</span>
+        <span class="heart" id="heart-4">🌼</span>
+        <span class="heart" id="heart-5">🌼</span>
+    </div>
+    <button class="next-reason" onclick="nextReason(11)">Следующая причина</button>
+</div>
+<!-- Причина 11 -->
+<div class="reason" id="reason-11">
+    <h3>Ты у меня самая лучшая, с которой я могу поделиться всем.</h3>
+    <div class="heart-container">
+        <span class="heart" id="heart-1">❤️</span>
+        <span class="heart" id="heart-2">❤️</span>
+        <span class="heart" id="heart-3">❤️</span>
+        <span class="heart" id="heart-4">❤️</span>
+        <span class="heart" id="heart-5">❤️</span>
+    </div>
+    <button class="next-reason" onclick="nextReason(12)">Следующая причина</button>
+</div>
+  <!-- Причина 12 -->
+  <div class="reason" id="reason-12">
+    <h3>Ты разделяешь со мной все радости и переживания.</h3>
+    <div class="heart-container">
+        <span class="heart" id="heart-1">✨️</span>
+        <span class="heart" id="heart-2">✨️</span>
+        <span class="heart" id="heart-3">✨️</span>
+        <span class="heart" id="heart-4">✨</span>
+        <span class="heart" id="heart-5">✨️</span>
+    </div>
+    <button class="next-reason" onclick="nextReason(13)">Следующая причина</button>
+</div>
+<!-- Причина 13 -->
+<div class="reason" id="reason-13">
+<h3>Ты всегда поддерживаешь мои мечты и амбиции.</h3>
+<div class="heart-container">
+<span class="heart" id="heart-1">❤️</span>
+<span class="heart" id="heart-2">❤️</span>
+<span class="heart" id="heart-3">❤️</span>
+<span class="heart" id="heart-4">❤️</span>
+<span class="heart" id="heart-5">❤️</span>
+</div>
+<button class="next-reason" onclick="nextReason(14)">Следующая причина</button>
+</div>
+<!-- Причина 14 -->
+<div class="reason" id="reason-14">
+<h3>Ты красивая, умная, очень старательная, ты всегда выкладываешься на полную.</h3>
+<div class="heart-container">
+<span class="heart" id="heart-1">❤️</span>
+<span class="heart" id="heart-2">❤️</span>
+<span class="heart" id="heart-3">❤️</span>
+<span class="heart" id="heart-4">❤️</span>
+<span class="heart" id="heart-5">❤️</span>
+</div>
+<button class="next-reason" onclick="nextReason(15)">Следующая причина</button>
+</div>
+<!-- Причина 15 -->
+<div class="reason" id="reason-15">
+<h3>Ты делаешь меня лучше просто своей любовью.</h3>
+<div class="heart-container">
+<span class="heart" id="heart-1">💑</span>
+<span class="heart" id="heart-2">💑</span>
+<span class="heart" id="heart-3">💑</span>
+<span class="heart" id="heart-4">💑</span>
+<span class="heart" id="heart-5">💑</span>
+</div>
+<button class="next-reason" onclick="nextReason(16)">Следующая причина</button>
+</div>
+<!-- Причина 16 -->
+<div class="reason" id="reason-16">
+<h3>Ты всегда находишь время для меня, даже если у тебя много дел.</h3>
+<div class="heart-container">
+<span class="heart" id="heart-1">❤️</span>
+<span class="heart" id="heart-2">❤️</span>
+<span class="heart" id="heart-3">❤️</span>
+<span class="heart" id="heart-4">❤️</span>
+<span class="heart" id="heart-5">❤️</span>
+</div>
+<button class="next-reason" onclick="nextReason(17)">Следующая причина</button>
+</div>
+<!-- Причина 17 -->
+<div class="reason" id="reason-17">
+<h3>Ты принимаешь мои странности и любишь меня за это.</h3>
+<div class="heart-container">
+<span class="heart" id="heart-1">❤️</span>
+<span class="heart" id="heart-2">❤️</span>
+<span class="heart" id="heart-3">❤️</span>
+<span class="heart" id="heart-4">❤️</span>
+<span class="heart" id="heart-5">❤️</span>
+</div>
+<button class="next-reason" onclick="nextReason(18)">Следующая причина</button>
+</div>
+<!-- Причина 18 -->
+<div class="reason" id="reason-18">
+<h3>Ты не боишься открыться и показать свои чувства.</h3>
+<div class="heart-container">
+<span class="heart" id="heart-1">❤️</span>
+<span class="heart" id="heart-2">❤️</span>
+<span class="heart" id="heart-3">❤️</span>
+<span class="heart" id="heart-4">❤️</span>
+<span class="heart" id="heart-5">❤️</span>
+</div>
+<button class="next-reason" onclick="nextReason(19)">Следующая причина</button>
+</div>
+
+<!-- Причина 19 -->
+<div class="reason" id="reason-19">
+<h3>За твоё доверие ко мне.</h3> 
+<div class="heart-container">
+<span class="heart" id="heart-1">❤️</span>
+<span class="heart" id="heart-2">❤️</span>
+<span class="heart" id="heart-3">❤️</span>
+<span class="heart" id="heart-4">❤️</span>
+<span class="heart" id="heart-5">❤️</span>
+</div>
+<button class="next-reason" onclick="nextReason(20)">Следующая причина</button>
+</div>
+<!-- Причина 20 -->
+<div class="reason" id="reason-20">
+<h3>Потому что ты очень красивая и милая.</h3>
+<div class="heart-container">
+<span class="heart" id="heart-1">🥰</span>
+<span class="heart" id="heart-2">🥰</span>
+<span class="heart" id="heart-3">🥰</span>
+<span class="heart" id="heart-4">🥰</span>
+<span class="heart" id="heart-5">🥰</span>
+</div>
+<button class="next-reason" onclick="nextReason(21)">Следующая причина</button>
+</div>
+ <!-- Причина 21 -->
+ <div class="reason" id="reason-21">
+    <h3>Ты всегда помнишь важные даты и моменты для нас.</h3>
+    <div class="heart-container">
+        <span class="heart" id="heart-1">❤️</span>
+        <span class="heart" id="heart-2">❤️</span>
+        <span class="heart" id="heart-3">❤️</span>
+        <span class="heart" id="heart-4">❤️</span>
+        <span class="heart" id="heart-5">❤️</span>
+    </div>
+    <button class="next-reason" onclick="nextReason(22)">Следующая причина</button>
+</div>
+  <!-- Причина 22 -->
+  <div class="reason" id="reason-22">
+    <h3>Рядом с тобой я могу быть самим собой.</h3>
+    <div class="heart-container">
+        <span class="heart" id="heart-1">❤️</span>
+        <span class="heart" id="heart-2">❤️</span>
+        <span class="heart" id="heart-3">❤️</span>
+        <span class="heart" id="heart-4">❤️</span>
+        <span class="heart" id="heart-5">❤️</span>
+    </div>
+    <button class="next-reason" onclick="nextReason(23)">Следующая причина</button>
+</div>
+<!-- Причина 23 -->
+<div class="reason" id="reason-23">
+<h3>C тобой мне хорошо, комфортно, весело и интересно.</h3>
+<div class="heart-container">
+<span class="heart" id="heart-1">❤️</span>
+<span class="heart" id="heart-2">❤️</span>
+<span class="heart" id="heart-3">❤️</span>
+<span class="heart" id="heart-4">❤️</span>
+<span class="heart" id="heart-5">❤️</span>
+</div>
+<button class="next-reason" onclick="nextReason(24)">Следующая причина</button>
+</div>
+<!-- Причина 24 -->
+<div class="reason" id="reason-24">
+<h3>Ты настоящая, искренняя и честная со мной.</h3>
+<div class="heart-container">
+<span class="heart" id="heart-1">💌</span>
+<span class="heart" id="heart-2">💌</span>
+<span class="heart" id="heart-3">💌</span>
+<span class="heart" id="heart-4">💌</span>
+<span class="heart" id="heart-5">💌</span>
+</div>
+<button class="next-reason" onclick="nextReason(25)">Следующая причина</button>
+</div>
+<!-- Причина 25 -->
+<div class="reason" id="reason-25">
+<h3>Ты умеешь быть невероятно доброй и заботливой.</h3>
+<div class="heart-container">
+<span class="heart" id="heart-1">💫</span>
+<span class="heart" id="heart-2">💫</span>
+<span class="heart" id="heart-3">💫</span>
+<span class="heart" id="heart-4">💫</span>
+<span class="heart" id="heart-5">💫</span>
+</div>
+<button class="next-reason" onclick="nextReason(26)">Следующая причина</button>
+</div>
+<!-- Причина 26 -->
+<div class="reason" id="reason-26">
+<h3>Ты мой лучший друг.</h3>
+<div class="heart-container">
+<span class="heart" id="heart-1">❤️</span>
+<span class="heart" id="heart-2">❤️</span>
+<span class="heart" id="heart-3">❤️</span>
+<span class="heart" id="heart-4">❤️</span>
+<span class="heart" id="heart-5">❤️</span>
+</div>
+<button class="next-reason" onclick="nextReason(27)">Следующая причина</button>
+</div>
+<!-- Причина 27 -->
+<div class="reason" id="reason-27">
+<h3>Ты всегда говоришь правду.</h3>
+<div class="heart-container">
+<span class="heart" id="heart-1">❤️</span>
+<span class="heart" id="heart-2">❤️</span>
+<span class="heart" id="heart-3">❤️</span>
+<span class="heart" id="heart-4">❤️</span>
+<span class="heart" id="heart-5">❤️</span>
+</div>
+<button class="next-reason" onclick="nextReason(28)">Следующая причина</button>
+</div>
+<!-- Причина 28 -->
+<div class="reason" id="reason-28">
+<h3>Ты проявляешь внимание к мелочам.</h3>
+<div class="heart-container">
+<span class="heart" id="heart-1">❤️</span>
+<span class="heart" id="heart-2">❤️</span>
+<span class="heart" id="heart-3">❤️</span>
+<span class="heart" id="heart-4">❤️</span>
+<span class="heart" id="heart-5">❤️</span>
+</div>
+<button class="next-reason" onclick="nextReason(29)">Следующая причина</button>
+</div>
+
+<!-- Причина 29 -->
+<div class="reason" id="reason-29">
+<h3>Ты умеешь прощать.</h3>
+<div class="heart-container">
+<span class="heart" id="heart-1">❤️</span>
+<span class="heart" id="heart-2">❤️</span>
+<span class="heart" id="heart-3">❤️</span>
+<span class="heart" id="heart-4">❤️</span>
+<span class="heart" id="heart-5">❤️</span>
+</div>
+<button class="next-reason" onclick="nextReason(30)">Следующая причина</button>
+</div>
+<!-- Причина 30 -->
+<div class="reason" id="reason-30">
+<h3>Ты гордишься мной.</h3>
+<div class="heart-container">
+<span class="heart" id="heart-1">❤️</span>
+<span class="heart" id="heart-2">❤️</span>
+<span class="heart" id="heart-3">❤️</span>
+<span class="heart" id="heart-4">❤️</span>
+<span class="heart" id="heart-5">❤️</span>
+</div>
+<button class="next-reason" onclick="nextReason(31)">Следующая причина</button>
+</div>
+<!-- Причина 31 -->
+<div class="reason" id="reason-31">
+<h3>Ты моя поддержка.</h3>
+<div class="heart-container">
+<span class="heart" id="heart-1">😘</span>
+<span class="heart" id="heart-2">😘</span>
+<span class="heart" id="heart-3">😘</span>
+<span class="heart" id="heart-4">😘</span>
+<span class="heart" id="heart-5">😘</span>
+</div>
+<button class="next-reason" onclick="nextReason(32)">Следующая причина</button>
+</div>
+<!-- Причина 32 -->
+<div class="reason" id="reason-32">
+<h3>Ты интересуешься моими увлечениями.</h3>
+<div class="heart-container">
+<span class="heart" id="heart-1">❤️</span>
+<span class="heart" id="heart-2">❤️</span>
+<span class="heart" id="heart-3">❤️</span>
+<span class="heart" id="heart-4">❤️</span>
+<span class="heart" id="heart-5">❤️</span>
+</div>
+<button class="next-reason" onclick="nextReason(33)">Следующая причина</button>
+</div>
+<!-- Причина 33 -->
+<div class="reason" id="reason-33">
+<h3>Ты всегда готова помочь.</h3>
+<div class="heart-container">
+<span class="heart" id="heart-1">🦋</span>
+<span class="heart" id="heart-2">🦋</span>
+<span class="heart" id="heart-3">🦋</span>
+<span class="heart" id="heart-4">🦋</span>
+<span class="heart" id="heart-5">🦋</span>
+</div>
+<button class="next-reason" onclick="nextReason(34)">Следующая причина</button>
+</div>
+<!-- Причина 34 -->
+<div class="reason" id="reason-34">
+<h3>Ты делаешь каждый день особенным.</h3>
+<div class="heart-container">
+<span class="heart" id="heart-1">❤️</span>
+<span class="heart" id="heart-2">❤️</span>
+<span class="heart" id="heart-3">❤️</span>
+<span class="heart" id="heart-4">❤️</span>
+<span class="heart" id="heart-5">❤️</span>
+</div>
+<button class="next-reason" onclick="nextReason(35)">Следующая причина</button>
+</div>
+<!-- Причина 35 -->
+<div class="reason" id="reason-35">
+<h3>Ты настоящая, такая, какая есть.</h3>
+<div class="heart-container">
+<span class="heart" id="heart-1">❤️</span>
+<span class="heart" id="heart-2">❤️</span>
+<span class="heart" id="heart-3">❤️</span>
+<span class="heart" id="heart-4">❤️</span>
+<span class="heart" id="heart-5">❤️</span>
+</div>
+<button class="next-reason" onclick="nextReason(36)">Следующая причина</button>
+</div>
+<!-- Причина 36 -->
+<div class="reason" id="reason-36">
+<h3>Ты даришь мне самые красивые рисунки.</h3>
+<div class="heart-container">
+<span class="heart" id="heart-1">💞</span>
+<span class="heart" id="heart-2">💞</span>
+<span class="heart" id="heart-3">💞</span>
+<span class="heart" id="heart-4">💞</span>
+<span class="heart" id="heart-5">💞</span>
+</div>
+<button class="next-reason" onclick="nextReason(37)">Следующая причина</button>
+</div>
+<!-- Причина 37 -->
+<div class="reason" id="reason-37">
+<h3>Ты всегда со мной, даже когда ты далеко.</h3>
+<div class="heart-container">
+<span class="heart" id="heart-1">❤️</span>
+<span class="heart" id="heart-2">❤️</span>
+<span class="heart" id="heart-3">❤️</span>
+<span class="heart" id="heart-4">❤️</span>
+<span class="heart" id="heart-5">❤️</span>
+</div>
+<button class="next-reason" onclick="nextReason(38)">Следующая причина</button>
+</div>
+<!-- Причина 38 -->
+<div class="reason" id="reason-38">
+<h3>Ты никогда не сдаешься.</h3>
+<div class="heart-container">
+<span class="heart" id="heart-1">❤️</span>
+<span class="heart" id="heart-2">❤️</span>
+<span class="heart" id="heart-3">❤️</span>
+<span class="heart" id="heart-4">❤️</span>
+<span class="heart" id="heart-5">❤️</span>
+</div>
+<button class="next-reason" onclick="nextReason(39)">Следующая причина</button>
+</div>
+
+<!-- Причина 39 -->
+<div class="reason" id="reason-39">
+<h3>Ты — моя любовь, и я горжусь этим.</h3> 
+<div class="heart-container">
+<span class="heart" id="heart-1">❤️</span>
+<span class="heart" id="heart-2">❤️</span>
+<span class="heart" id="heart-3">❤️</span>
+<span class="heart" id="heart-4">❤️</span>
+<span class="heart" id="heart-5">❤️</span>
+</div>
+<button class="next-reason" onclick="nextReason(40)">Следующая причина</button>
+</div>
+<!-- Причина 40 -->
+<div class="reason" id="reason-40">
+<h3>Ты умеешь быть нежной и ласковой.</h3>
+<div class="heart-container">
+<span class="heart" id="heart-1">😻</span>
+<span class="heart" id="heart-2">😻</span>
+<span class="heart" id="heart-3">😻</span>
+<span class="heart" id="heart-4">😻</span>
+<span class="heart" id="heart-5">😻</span>
+</div>
+<button class="next-reason" onclick="nextReason(41)">Следующая причина</button>
+</div>
+<!-- Причина 41 -->
+<div class="reason" id="reason-41">
+    <h3>Ты никогда не оставляешь меня в беде.<h3>
+    <div class="heart-container">
+    <span class="heart" id="heart-1">❤️</span>
+    <span class="heart" id="heart-2">❤️</span>
+    <span class="heart" id="heart-3">❤️</span>
+    <span class="heart" id="heart-4">❤️</span>
+    <span class="heart" id="heart-5">❤️</span>
+    </div>
+    <button class="next-reason" onclick="nextReason(42)">Следующая причина</button>
+    </div>
+    <!-- Причина 42 -->
+    <div class="reason" id="reason-42">
+    <h3>Ты всегда верна мне.</h3>
+    <div class="heart-container">
+    <span class="heart" id="heart-1">🕊</span>
+    <span class="heart" id="heart-2">🕊</span>
+    <span class="heart" id="heart-3">🕊</span>
+    <span class="heart" id="heart-4">🕊</span>
+    <span class="heart" id="heart-5">🕊</span>
+    </div>
+    <button class="next-reason" onclick="nextReason(43)">Следующая причина</button>
+    </div>
+    <!-- Причина 43 -->
+    <div class="reason" id="reason-43">
+    <h3>Ты никогда ничего не скрываешь.</h3>
+    <div class="heart-container">
+    <span class="heart" id="heart-1">❤️</span>
+    <span class="heart" id="heart-2">❤️</span>
+    <span class="heart" id="heart-3">❤️</span>
+    <span class="heart" id="heart-4">❤️</span>
+    <span class="heart" id="heart-5">❤️</span>
+    </div>
+    <button class="next-reason" onclick="nextReason(44)">Следующая причина</button>
+    </div>
+    <!-- Причина 44 -->
+    <div class="reason" id="reason-44">
+    <h3>Ты любовь всей моей жизни.</h3>
+    <div class="heart-container">
+    <span class="heart" id="heart-1">💘</span>
+    <span class="heart" id="heart-2">💘</span>
+    <span class="heart" id="heart-3">💘</span>
+    <span class="heart" id="heart-4">💘</span>
+    <span class="heart" id="heart-5">💘</span>
+    </div>
+    <button class="next-reason" onclick="nextReason(45)">Следующая причина</button>
+    </div>
+    <!-- Причина 45 -->
+    <div class="reason" id="reason-45">
+    <h3>Только с тобой я испытываю невероятные чувства.</h3>
+    <div class="heart-container">
+    <span class="heart" id="heart-1">❤️</span>
+    <span class="heart" id="heart-2">❤️</span>
+    <span class="heart" id="heart-3">❤️</span>
+    <span class="heart" id="heart-4">❤️</span>
+    <span class="heart" id="heart-5">❤️</span>
+    </div>
+    <button class="next-reason" onclick="nextReason(46)">Следующая причина</button>
+    </div>
+    <!-- Причина 46 -->
+    <div class="reason" id="reason-46">
+    <h3>Ты готова на всё ради меня и наших отношений.</h3>
+    <div class="heart-container">
+    <span class="heart" id="heart-1">❤️</span>
+    <span class="heart" id="heart-2">❤️</span>
+    <span class="heart" id="heart-3">❤️</span>
+    <span class="heart" id="heart-4">❤️</span>
+    <span class="heart" id="heart-5">❤️</span>
+    </div>
+    <button class="next-reason" onclick="nextReason(47)">Следующая причина</button>
+    </div>
+    <!-- Причина 47 -->
+    <div class="reason" id="reason-47">
+    <h3>Мне нравится в тебе всё.</h3>
+    <div class="heart-container">
+    <span class="heart" id="heart-1">🌻</span>
+    <span class="heart" id="heart-2">🌻</span>
+    <span class="heart" id="heart-3">🌻</span>
+    <span class="heart" id="heart-4">🌻</span>
+    <span class="heart" id="heart-5">🌻</span>
+    </div>
+    <button class="next-reason" onclick="nextReason(48)">Следующая причина</button>
+    </div>
+    <!-- Причина 48 -->
+    <div class="reason" id="reason-48">
+    <h3>Когда ты рядом, моё сердце трепещет.</h3>
+    <div class="heart-container">
+    <span class="heart" id="heart-1">❤️</span>
+    <span class="heart" id="heart-2">❤️</span>
+    <span class="heart" id="heart-3">❤️</span>
+    <span class="heart" id="heart-4">❤️</span>
+    <span class="heart" id="heart-5">❤️</span>
+    </div>
+    <button class="next-reason" onclick="nextReason(49)">Следующая причина</button>
+    </div>
+    <!-- Причина 49 -->
+    <div class="reason" id="reason-49">
+    <h3>Ты мой цветочек.</h3>
+    <div class="heart-container">
+    <span class="heart" id="heart-1">❤️</span>
+    <span class="heart" id="heart-2">❤️</span>
+    <span class="heart" id="heart-3">❤️</span>
+    <span class="heart" id="heart-4">❤️</span>
+    <span class="heart" id="heart-5">❤️</span>
+    </div>
+    <button class="next-reason" onclick="nextReason(50)">Следующая причина</button>
+    </div>
+    
+    <!-- Причина 50 -->
+    <div class="reason" id="reason-50">
+    <h3>Я люблю тебя просто за то, что ты есть.</h3> 
+    <div class="heart-container">
+    <span class="heart" id="heart-1">❤️</span>
+    <span class="heart" id="heart-2">❤️</span>
+    <span class="heart" id="heart-3">❤️</span>
+    <span class="heart" id="heart-4">❤️</span>
+    <span class="heart" id="heart-5">❤️</span>
+    </div>
+    <button class="next-reason" onclick="nextReason(51)">Следующая причина</button>
+    </div>
+    <!-- Причина 51 -->
+    <div class="reason" id="reason-51">
+        <h3>С Днем влюбленных, тебя, малышка!</h3>  
+        <div class="heart-container">
+        <span class="heart" id="heart-1">💐</span>
+        <span class="heart" id="heart-2">💐</span>
+        <span class="heart" id="heart-3">💐</span>
+        <span class="heart" id="heart-4">💐</span>
+        <span class="heart" id="heart-5">💐</span>
+        </div>
+        <button class="next-reason" onclick="nextReason(1)">Следующая причина</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script src="script.js"></script>
+    <script>
+        let currentReason = 1; // Начинаем с первой причины
+
+        // Функция для начала путешествия
+        function startJourney() {
+            // Скрываем кнопку "Начать путешествие"
+            document.getElementById('start-button').style.display = 'none';
+        
+            // Показываем контейнер с фоном и причиной
+            const reasonContainer = document.getElementById('reason-container');
+            reasonContainer.style.display = 'flex';
+        
+            // Появление первой причины
+            showReason(currentReason);
+        }
+        
+        // Функция для показа причины
+        function showReason(reasonNumber) {
+            // Скрываем все причины
+            const allReasons = document.querySelectorAll('.reason');
+            allReasons.forEach((reason) => reason.style.display = 'none');
+        
+            // Показываем нужную причину
+            const reasonToShow = document.getElementById('reason-' + reasonNumber);
+            if (reasonToShow) {
+                reasonToShow.style.display = 'block';
+                reasonToShow.style.opacity = 0;
+                setTimeout(() => {
+                    reasonToShow.style.transition = 'opacity 1s ease-in-out';
+                    reasonToShow.style.opacity = 1;
+                }, 100);
+            }
+        }
+        
+        // Функция для перехода к следующей причине
+        function nextReason(nextReasonNumber) {
+            currentReason = nextReasonNumber;
+            showReason(currentReason);
+        }
+
+        // Функция для прокрутки страницы в начало
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>
+
